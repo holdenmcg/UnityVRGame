@@ -899,7 +899,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5775,7 +5775,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -10648,7 +10648,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -15328,7 +15328,7 @@ PrefabInstance:
     - target: {fileID: 198784103993327754, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114858989134327784, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
@@ -15353,7 +15353,7 @@ PrefabInstance:
     - target: {fileID: 198397485540822548, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198397485540822548, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
@@ -15388,7 +15388,7 @@ PrefabInstance:
     - target: {fileID: 198018591032566760, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198882928218440784, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
@@ -15408,7 +15408,7 @@ PrefabInstance:
     - target: {fileID: 198882928218440784, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 198397762831044824, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
@@ -15428,7 +15428,7 @@ PrefabInstance:
     - target: {fileID: 198397762831044824, guid: 59df0f563f95c764e87867ff8ddcdb83,
         type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59df0f563f95c764e87867ff8ddcdb83, type: 3}

@@ -49,16 +49,18 @@ public class KatanaWaveManager : MonoBehaviour
 
         if (OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger) > 0.2f)
         {
+            Debug.Log("TRIGGER HELD: WAVE SHOULD BE GETTING DRAWN");
             waveStartPos = gameObject.transform.position;
             waveDrawn = true;
             //bladeTip.GetComponent<ParticleSystemForceField>().gravity = 0.05f;
             OVRInput.SetControllerVibration(0.2f, 0.2f, OVRInput.Controller.RTouch);
-            emissionModule.rateOverDistance = bladeOn;
+           // emissionModule.rateOverDistance = bladeOn;
             bladeSystem.Play();
             Debug.Log("rate over time of emission module: " + emissionModule.rateOverTime.constant);
         }
         else if(OVRInput.Get(OVRInput.RawAxis1D.RIndexTrigger) <= 0.2f && waveDrawn == true)
         {
+            Debug.Log("TRIGGER RELEASED: WAVE SHOULD MOVE OUTWARD");
             waveEndPos = gameObject.transform.position;
             waveMidPoint = ((waveStartPos + waveEndPos)/2);
             
@@ -76,7 +78,7 @@ public class KatanaWaveManager : MonoBehaviour
             forceField.directionZ = waveMidPoint.z - GameObject.Find("OVRCameraRig").GetComponent<OVRCameraRig>().centerEyeAnchor.position.z;
 
             OVRInput.SetControllerVibration(0f, 0f, OVRInput.Controller.RTouch);
-            emissionModule.rateOverDistance = bladeOff;
+            //emissionModule.rateOverDistance = bladeOff;
             bladeSystem.Stop();
             waveDrawn = false;
             
